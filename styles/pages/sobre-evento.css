@@ -1,0 +1,12 @@
+.sobre-evento {
+    
+    .input-text {
+        display: flex;
+        margin: auto;
+        flex-direction: column;
+        width: 100%;
+
+        
+        
+    }
+}

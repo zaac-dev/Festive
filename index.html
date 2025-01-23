@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festive</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Leckerli+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <aside>
+        <img  src="./images/Logo.svg" class="logo" alt="">
+        <h1>Festive</h1>
+        <p>Crie um convite digital para o seu evento</p>
+    </aside>
+
+    <main>
+        <div class="main-container">
+            <h1>Crie seu convite</h1>
+            <form>
+                <fieldset class="sobre-evento">
+                    <legend class="flex align-center font-legend">
+                        <img  src="./icons/calendar.svg" class="icon" alt="">
+                        Sobre o evento
+                    </legend>
+
+                    <div class="input-text">
+                        <label class="label-title" for="title">Título</label>
+                        <input class="input" type="text" id="title" placeholder="Nome do evento">
+                    </div>
+
+                    
+                </fieldset>
+
+                <fieldset class="dates">
+                    
+                    <div class="input-date">
+                        <label class="label" for="">inicio</label>
+                        <input class="input" type="datetime-local" id="date">
+                    </div>
+
+                    <div class="input-date">
+                        <label class="label" for="">Fim</label>
+                        <input class="input" type="datetime-local" id="date">
+                    </div>
+
+                </fieldset>
+
+                <fieldset class="enrol-local" >
+                    <label class="label" >Tipo</label>
+
+                    <div class="input-wrapper">
+                        
+                        <div class="radio-wrapper">
+                            <div class="radio-inner">
+                                <div class="radioimage"></div>
+                                <input type="radio" name="local-shift" value="presencial" id="presencial" checked>
+                                <img src="./icons/building-2.svg" alt="">
+                                <label class="label" for="presencial">Presencial</label>
+                            </div>
+
+                            <div class="radio-inner">
+                                <div class="radioimage"></div>
+                                <input type="radio" name="local-shift" value="online" id="online">
+                                <img src="./icons/video.svg" alt="">
+                                <label class="label" for="online">Online</label>
+                            </div>
+
+
+                        </div>
+
+                        <div class="local">
+                            <label>Local</label>
+                            <div class="input-wrapper">
+                                <input class="input" type="text" id="text" name="text" placeholder="Link ou endereço">
+                            </div>
+                        </div>
+
+
+                        
+                    </div>
+                    
+                    <div class="textarea">
+                        <label class="label-textarea" >Descrição</label>
+                        <textarea name="descrição" id="descrição" rows="10" cols="100" placeholder="Escreva sobre os detalhes do evento"></textarea>
+                    </div>
+
+                </fieldset>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,33 @@
+aside {
+    background-image: url(../../images/background.png);
+    width: 40rem;
+    height: 90vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    border-radius: 2rem;
+    position: fixed;
+
+    .logo {
+        width: 4.5rem ;
+        height: 4.8rem;
+        margin-left: 3.2rem;
+        margin-top: 3.2rem;
+        
+    }
+
+    h1 {
+        color: var(--pink);
+        font: var(--logo);
+        margin-left: 3.2rem;
+        margin-top: 1.6rem;
+    }
+
+    p {
+        color: var(--text-heading);
+        font: var(--Body-md);
+        margin-top: -1rem;
+        margin-left: 3.2rem;
+        
+    }
+}

@@ -1,0 +1,24 @@
+main {
+    
+    width: 130rem;
+    margin-left: 41rem;
+    padding: 8rem 13rem;
+    background-color: var(--shape-body);
+    border-radius: 1.2rem;
+    
+
+    .main-container {
+        border: 1px solid red;
+        padding: 0 13rem;
+        margin: 0 auto;
+        width: 100%;
+        
+        h1 {
+            display: inline-block;
+            margin: auto;
+            color: var(--text-heading);
+            font: var( --Heading-md);   
+            margin-bottom: 2.8rem;         
+        }
+    }
+}

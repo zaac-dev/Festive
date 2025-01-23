@@ -1,0 +1,108 @@
+
+
+
+
+
+.radio-wrapper {
+    
+    gap: 1rem;
+    padding: .4rem;
+    border-radius: .8rem;
+    background-color: var(--input-base);
+    width: 27.5rem;
+    border: 1px solid var(--input-stroker);
+    
+    .label {
+        margin-top: 1rem;
+
+    }
+
+    .radio-inner {
+        
+        display: flex;
+        width: 13rem;
+        height: 4rem;
+        display: inline-flex;
+        justify-items: center;
+        align-items: center;
+        gap: .5rem;
+        padding: 1.2rem 1rem;
+        border-radius: .8rem;
+    
+        &:has(:checked) {
+
+
+            
+
+            label {
+                color: var(--text-heading);
+                font-weight: 600;
+            }
+        }
+    
+        &:has(:checked) {
+            img {
+                filter: brightness(0) saturate(100%) invert(66%) sepia(69%) saturate(216%) hue-rotate(185deg) brightness(96%) contrast(92%);
+            }
+        }
+    
+        input[type="radio"] {
+            appearance: none;
+            -webkit-appearance: none;
+            position: absolute;
+            visibility: hidden;
+    
+        
+        
+        }
+    
+        img {
+            width: 1.6rem;
+            height: 1.6rem;
+        }
+    
+        .label:hover {
+            color: var(--text-heading);
+            font-weight: 600;
+    
+            
+        }
+    
+    
+    
+    }
+    
+    .radio-inner:hover {
+        background-color: var(--shape-button);
+        color: var(--text-heading);
+        font-weight: 600;
+        cursor: pointer;
+    
+    
+        label {
+            color: var(--text-heading);
+            font-weight: 600;
+        }
+        
+        img {
+            filter: brightness(0) saturate(100%) invert(66%) sepia(69%) saturate(216%) hue-rotate(185deg) brightness(96%) contrast(92%);
+        }
+    }
+    
+    
+    
+}
+
+.radio-inner:has(:checked) {
+    background-color: var(--shape-button);
+    color: var(--text-heading);
+    font-weight: 600;
+}
+
+
+.input-wrapper-local{
+    
+    border: 1px solid rgb(68, 0, 255);
+}
+
+
