@@ -1,0 +1,94 @@
+.options {
+    display: flex;
+    gap: 2.8rem;
+    justify-content: center;
+    align-items: center;
+
+    
+
+    & legend {
+        margin-top: 1.6rem;
+    }
+
+    
+    .radios {
+
+        input[type="radio"] {
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+        }
+
+        .color1, .color2, .color3, .color4, .color5, .color6, .color7, .color8, .color9, .color10, .color11 {
+            margin-top: 1.6rem;
+            width: 2.8rem;
+            height: 2.8rem;
+            border-radius: 50%;
+            cursor: pointer;
+            border: 0.4rem solid var(--shape-button);
+            transition: box-shadow 0.2s ease;
+        }
+
+        .color1 {
+            background-color: var(--brand-ligth);
+        }
+        .color2 {
+            background-color: var(--brand-mid);
+        }
+        .color3 {
+            background-color: var(--brand-dark);
+        }
+        .color4 {
+            background-color: var(--puple);
+        }
+        .color5 {
+            background-color: var(--fuschia);
+        }
+        .color6 {
+            background-color: var(--pink);
+        }
+        .color7 {
+            background-color: var(--orange);
+        }
+        .color8 {
+            background-color: var(--yellow);
+        }
+        .color9 {
+            background-color: var(--lime);
+        }
+        .color10 {
+            background-color: var(--green);
+        }
+        .color11 {
+            background-color: var(--cyan);
+    }
+
+    label:hover .color1,
+    label:hover .color2,
+    label:hover .color3,
+    label:hover .color4,
+    label:hover .color5,
+    label:hover .color6,
+    label:hover .color7,
+    label:hover .color8,
+    label:hover .color9,
+    label:hover .color10,
+    label:hover .color11 {
+    box-shadow: 0 0 0 0.2rem var(--brand-ligth);
+}
+
+input[type="radio"]:checked + .color1,
+input[type="radio"]:checked + .color2,
+input[type="radio"]:checked + .color3,
+input[type="radio"]:checked + .color4,
+input[type="radio"]:checked + .color5,
+input[type="radio"]:checked + .color6,
+input[type="radio"]:checked + .color7,
+input[type="radio"]:checked + .color8,
+input[type="radio"]:checked + .color9,
+input[type="radio"]:checked + .color10,
+input[type="radio"]:checked + .color11 {
+box-shadow: 0 0 0 0.2rem var(--brand-ligth); 
+}
+}
+}

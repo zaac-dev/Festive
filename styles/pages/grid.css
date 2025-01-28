@@ -1,0 +1,45 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: .8rem;
+
+
+  
+    label {
+        transition: box-shadow 0.3s ease;
+
+
+
+        cursor: pointer;
+        background-color: var(--shape-button);
+        border-radius: .8rem;
+        padding: .4rem .4rem;
+        border: 1px solid var(--input-stroker);
+        
+
+        img {
+            height: 7rem;
+            width: 100%;
+        }
+
+        figcaption {
+            color: var(--text-heading);
+            font: var(--Body-sm);
+            text-align: center;
+            padding-block: .8rem;
+        }
+    }
+
+    label:hover {
+       background-color: var(--input-placeholder);
+    }
+
+    .radio-input {
+        display: none;
+    }
+
+    .radio-input:checked + .card {
+        box-shadow: 0 0 0 0.2rem var(--brand-ligth);
+    }
+}   

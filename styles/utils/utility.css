@@ -64,7 +64,7 @@
 
 
 
-.label-title { /*primeiro label do form*/
+.label-title {
         
         color: var(--text-body);
         font: var(--Body-md);
@@ -80,3 +80,9 @@
     margin-top: 1.6rem;
 }
 
+
+.legend {
+    color: #ffffff;
+    font:var(--Body-sm);
+    margin-top: 2.8rem;
+}
