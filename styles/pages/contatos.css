@@ -1,0 +1,91 @@
+.contatos {
+    display: flex;
+    flex-direction: column;
+
+    legend {
+
+        img {
+            width: 2.4rem;
+            height: 2.4rem;
+        }
+
+        display: flex;
+        gap: 1.2rem;
+        align-items: center;
+        font: var(--heading-sm);
+        color: var(--text-heading);
+    }
+
+    label {
+        display: flex;
+        color: var(--text-body);
+        font: var(--Body-sm);
+        margin-bottom: 1rem;
+        margin-top: 1.6rem;
+    }
+
+    .info {
+        display: flex;
+        gap: 1.6rem;
+        justify-content: space-between;
+
+        .email, .phone {
+            width: 100%;
+        }
+    }
+
+}
+
+.checklist {
+    display: flex;
+    margin-top: 5rem;
+    align-items: center;
+    gap: 1.2rem;
+
+    ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+        
+
+        strong {
+            color: var(--brand-ligth);
+            font: var(--Body-sm);
+        }
+
+        li {
+            display: flex;
+            font: var(--Body-sm);
+            color: var(--text-body);
+            gap: 1.2rem;
+            align-items: center;
+            gap: 1.2rem;
+           
+        }
+    }
+
+}
+button {
+
+    img {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    background-color: var(--brand-ligth);
+    color: var(--text-heading);
+    font: var(--Body-md);
+    display: flex;
+    height: 4.8rem;
+    padding: .4rem 2rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+    border-radius: .8rem;
+    border: none;
+    margin-top: 3.2rem;
+    margin-left: auto;
+    cursor: pointer;
+   
+}

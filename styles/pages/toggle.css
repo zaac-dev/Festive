@@ -1,0 +1,133 @@
+.toggle {
+    display: flex;
+    justify-content: space-between;
+
+    .switch-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        width: 17.6rem;
+
+
+        .slider {
+            color: var(--text-body);
+            font: var(--Body-md);
+            margin-top: 6.9rem;
+            margin-right: 4.5rem;
+        }
+    }
+
+    input {
+        appearance: none;
+        position: absolute;
+    }
+
+    p {
+        display: inline-block;
+        
+        color: var(--text-body);
+        font: var(--Body-md);
+        margin-top: 2.8rem;
+        margin-bottom: 2rem;
+    }
+
+
+    .switch span{
+        content: '';
+        display: block;
+        width: 6.4rem;
+        height: 3.2rem;
+        background-color: var(--input-base);
+        border-radius: 2rem;
+        position: relative;
+        cursor: pointer;
+        transition: 0.3s;
+        border: 1px solid var(--input-stroker);
+    }
+
+    span::before {
+        content: '';
+        position: absolute;
+        width: 2.6rem;
+        height: 2.6rem;
+        background-color: var(--shape-button);
+        border-radius: 50%;
+        margin-block: auto;
+        left: .2rem;
+        top: .2rem;
+        transition: 0.3s;
+    }
+
+    input:checked ~ span {
+        background-color: var(--brand-ligth); 
+    }
+
+input:checked ~ span::before {
+    transform: translateX(3rem);
+    background-color: aliceblue;
+}
+
+.file {
+    
+    display: flex;
+    flex-direction: column;
+    width: 36.8rem;
+    align-items: flex-start;
+    gap: 1.2rem;
+
+        input[type="file"] {
+        display: none;
+
+    }
+
+    & .legend-file {
+        font: var(--Body-sm);
+        color: var(--text-body);
+        
+        
+    }
+    
+    .file-label {
+        margin-bottom: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--shape-button);
+        color: var(--text-heading);
+        font: var(--Body-sm);
+        border-radius: 5px;
+        cursor: pointer;
+        width: 16rem;
+        height: 4rem;
+        gap: 1rem;
+        padding: 1rem 1rem;
+       
+
+        img {
+            width: 2rem;
+            height: 2rem;
+        }
+
+    }
+
+    .drop-area {
+        width: 36.8rem;
+        
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 9rem;
+
+    span {
+        display: flex;
+        width: 20rem;
+        color: var(--input-placeholder);
+        font: var(--Body-md);
+    }
+    
+}
+
+}
+}
